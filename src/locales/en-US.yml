@@ -1,0 +1,19 @@
+_config:
+  server: "TShock Server"
+
+commands:
+  tshock:
+    description: "Query TShock server status"
+
+tshock:
+  status: |-
+    {name}
+    ------
+    Client Version: {serverversion}
+    Server Version: {tshockversion}
+    Uptime: {uptime}
+    Online: {playercount}/{maxplayers}
+    {#each players as p}
+      {p.nickname} ({p.username})
+    {/each}
+  error: "Cannot connect to server"

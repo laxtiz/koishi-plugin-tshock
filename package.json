@@ -2,6 +2,9 @@
   "name": "koishi-plugin-tshock",
   "description": "获取泰拉瑞亚服务器状态",
   "version": "0.0.1",
+  "contributors": [
+    "Zhong Liu <laxtiz@live.com>"
+  ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,8 +12,14 @@
     "dist"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/laxtiz/koishi-plugin-tshock",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laxtiz/koishi-plugin-tshock.git"
+  },
   "scripts": {},
   "keywords": [
+    "tshock",
     "chatbot",
     "koishi",
     "plugin"
@@ -18,5 +27,12 @@
   "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.5"
+  },
+  "koishi": {
+    "description": {
+      "en": "Get TShock server status",
+      "zh": "获取泰拉瑞亚服务器状态"
+    },
+    "locale": ["en", "zh"]
   }
 }
