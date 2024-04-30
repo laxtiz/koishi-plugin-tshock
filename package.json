@@ -2,9 +2,6 @@
   "name": "koishi-plugin-tshock",
   "description": "获取泰拉瑞亚服务器状态",
   "version": "0.0.1",
-  "contributors": [
-    "Zhong Liu <laxtiz@live.com>"
-  ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -12,10 +9,14 @@
     "dist"
   ],
   "license": "MIT",
+  "author": {
+    "name": "Zhong Liu",
+    "email": "laxtiz@live.com"
+  },
   "homepage": "https://github.com/laxtiz/koishi-plugin-tshock",
   "repository": {
     "type": "git",
-    "url": "https://github.com/laxtiz/koishi-plugin-tshock.git"
+    "url": "git+https://github.com/laxtiz/koishi-plugin-tshock.git"
   },
   "scripts": {},
   "keywords": [
