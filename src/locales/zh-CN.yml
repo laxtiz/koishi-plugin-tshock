@@ -1,19 +1,36 @@
 _config:
   server: "TShock 服务器"
+  token: "管理员令牌"
 
 commands:
   tshock:
-    description: "查询泰拉瑞亚服务器状态"
-
-tshock:
-  status: |-
-    {name}
-    ------
-    客户端版本: {serverversion}
-    服务器版本: {tshockversion}
-    运行时间: {uptime}
-    当前在线 {playercount}/{maxplayers}
-    {#each players as p}
-      {p.nickname} ({p.username})
-    {/each}
-  error: "无法连接到服务器"
+    description: "管理泰拉瑞亚服务器"
+    messages:
+      error: "无法连接到服务器"
+      response: |-
+        {name}
+        ------
+        客户端版本: {serverversion}
+        服务器版本: {tshockversion}
+        运行时间: {uptime}
+        当前在线 {playercount}/{maxplayers}
+        {#each players as p}{p.nickname} ({p.username})
+        {/each}
+    cmd:
+      description: "运行命令"
+      examples: |-
+        使用示例:
+        tshock.cmd /worldinfo
+        tr.cmd /playing
+      messages:
+        response: |-
+          {#each response as line}{line}
+          {/each}
+    say:
+      description: "广播消息"
+      examples: |-
+        使用示例:
+        tshock.say "Hello World!"
+        tr.say "你好，世界！"
+      messages:
+        response: "广播消息已发送"
