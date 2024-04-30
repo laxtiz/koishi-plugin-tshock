@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-tshock",
   "description": "获取泰拉瑞亚服务器状态",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -20,6 +20,7 @@
   },
   "scripts": {},
   "keywords": [
+    "terraria",
     "tshock",
     "chatbot",
     "koishi",
@@ -34,6 +35,9 @@
       "en": "Get TShock server status",
       "zh": "获取泰拉瑞亚服务器状态"
     },
-    "locale": ["en", "zh"]
+    "locale": [
+      "en",
+      "zh"
+    ]
   }
 }
